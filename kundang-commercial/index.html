@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kundang 全新商业 — 只有 50 间的大路边店铺</title>
+<meta name="description" content="Kundang 全新商业：Jalan Kundang 大路边 2 & 3 层店铺办公楼，全区只有 50 间，RM1,108,000 起。预约看地。">
+<meta property="og:title" content="Kundang 全新商业 — 只有 50 间">
+<meta property="og:description" content="Kundang 近 8 万人口，大路边 2 & 3 层店铺，RM1.108M 起。预约看地。">
+<meta property="og:image" content="img/hero-dusk.jpg">
+<meta name="theme-color" content="#0d131f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d131f; --ink2:#151d2e; --ink3:#1f2a40;
+  --cream:#f7f2e9; --paper:#fffdf9; --line:#e5dccb;
+  --gold:#c8a05a; --gold2:#e3c387; --ember:#e8703a;
+  --text:#1c2333; --mute:#6b7285; --mute-d:#9aa3b8;
+  --ok:#2f9e6b; --sold:#b9433b;
+  --serif:"Fraunces","Noto Serif SC","Songti SC",serif;
+  --sans:"Inter","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --r:18px; --wrap:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.65;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+html[data-lang="zh"] .en,html[data-lang="en"] .zh{display:none!important}
+.wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
+section{padding:clamp(72px,11vw,140px) 0;position:relative}
+.dark{background:var(--ink);color:#eef0f5}
+.dark2{background:linear-gradient(180deg,var(--ink) 0%,var(--ink2) 100%);color:#eef0f5}
+.paper{background:var(--paper)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.14;letter-spacing:-.01em;text-wrap:balance}
+html[data-lang="zh"] h1,html[data-lang="zh"] h2,html[data-lang="zh"] h3{font-weight:900;letter-spacing:0;line-height:1.25}
+h2{font-size:clamp(32px,5.4vw,60px)}
+h3{font-size:clamp(20px,2.4vw,26px)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.eyebrow i{font-style:normal;display:inline-grid;place-items:center;width:30px;height:30px;border:1px solid currentColor;border-radius:50%;letter-spacing:0;font-family:var(--serif);font-size:14px}
+.lead{font-size:clamp(18px,2vw,22px);color:var(--mute);max-width:44em;margin-top:22px}
+.dark .lead,.dark2 .lead{color:var(--mute-d)}
+em.g{font-style:normal;color:var(--gold)}
+.dark em.g,.dark2 em.g{color:var(--gold2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1407;box-shadow:0 10px 30px -10px rgba(200,160,90,.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px rgba(200,160,90,.85)}
+.btn-ghost{border:1px solid rgba(255,255,255,.3);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn-line{border:1px solid var(--text);color:var(--text)}
+.btn-line:hover{background:var(--text);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+.nudge{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px}
+.nudge small{color:var(--mute);font-size:14.5px}
+.dark .nudge small,.dark2 .nudge small{color:var(--mute-d)}
+
+/* nav + progress */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,backdrop-filter .3s,border-color .3s;border-bottom:1px solid transparent;color:#fff}
+.nav.solid{background:rgba(13,19,31,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.logo{font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:.06em;white-space:nowrap;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--gold2);color:var(--gold2);font-size:13px;letter-spacing:0;border-radius:6px}
+.nav-r{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:1px solid rgba(255,255,255,.25);border-radius:999px;overflow:hidden;font-size:13px;font-weight:600}
+.lang button{padding:7px 12px;color:rgba(255,255,255,.7)}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--ink)}
+.nav .btn{padding:10px 18px;font-size:14px}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--ember))}
+
+/* hero */
+.hero{min-height:100svh;padding:120px 0 64px;display:flex;align-items:flex-end;color:#fff;background:var(--ink);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(img/hero-dusk.jpg) center/cover no-repeat;transform:scale(1.06);animation:drift 22s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,19,31,.55) 0%,rgba(13,19,31,.25) 30%,rgba(13,19,31,.88) 78%,var(--ink) 100%)}
+.hero .wrap{position:relative;z-index:2}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.08em;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);margin-bottom:26px}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ember);box-shadow:0 0 0 0 rgba(232,112,58,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(232,112,58,0)}100%{box-shadow:0 0 0 0 rgba(232,112,58,0)}}
+h1{font-size:clamp(38px,7.4vw,92px);max-width:13em}
+.hero p.sub{font-size:clamp(18px,2.2vw,24px);color:rgba(255,255,255,.82);margin-top:24px;max-width:32em}
+.pick{margin-top:40px}
+.pick-q{font-size:14px;font-weight:600;letter-spacing:.06em;color:var(--gold2);margin-bottom:14px}
+.pick-row{display:flex;flex-wrap:wrap;gap:12px}
+.pick-row button{padding:15px 22px;border-radius:14px;border:1px solid rgba(255,255,255,.28);background:rgba(13,19,31,.45);backdrop-filter:blur(10px);color:#fff;font-weight:600;font-size:16px;text-align:left;transition:.2s;display:flex;align-items:center;gap:12px}
+.pick-row button:hover{border-color:var(--gold2);transform:translateY(-2px)}
+.pick-row button[aria-pressed="true"]{background:var(--gold2);border-color:var(--gold2);color:#1a1407}
+.pick-row span.ic{font-size:20px}
+.scroll-hint{margin-top:46px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:12px}
+.scroll-hint::before{content:"";width:1px;height:38px;background:linear-gradient(var(--gold2),transparent);animation:drop 1.8s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:56px}
+.stat{background:var(--paper);padding:30px 26px}
+.stat b{font-family:var(--serif);font-size:clamp(34px,4.4vw,54px);font-weight:700;line-height:1;display:block;color:var(--ink)}
+.stat b small{font-size:.42em;font-weight:600;margin-left:4px;color:var(--gold)}
+.stat span{display:block;margin-top:12px;font-size:14.5px;color:var(--mute);line-height:1.5}
+.leak{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.leak-card{border-radius:var(--r);padding:34px;border:1px solid var(--line);background:var(--paper)}
+.leak-card.hot{background:var(--ink);color:#fff;border-color:var(--ink)}
+.leak-card h3{margin-bottom:18px}
+.leak-card ul{list-style:none;display:grid;gap:12px}
+.leak-card li{display:flex;justify-content:space-between;gap:16px;padding-bottom:12px;border-bottom:1px dashed var(--line);font-size:16px}
+.leak-card.hot li{border-color:rgba(255,255,255,.16)}
+.leak-card li b{font-family:var(--serif);white-space:nowrap}
+.leak-card p{color:var(--mute);font-size:15.5px;margin-top:16px}
+.leak-card.hot p{color:var(--mute-d)}
+
+/* location */
+.loc-img{margin-top:52px;border-radius:var(--r);overflow:hidden;position:relative;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.loc-img img{width:100%;aspect-ratio:2346/1074;object-fit:cover}
+.loc-img figcaption{position:absolute;left:16px;bottom:14px;font-size:12.5px;background:rgba(13,19,31,.7);padding:6px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+.dist{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dist div{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px;background:rgba(255,255,255,.03)}
+.dist b{font-family:var(--serif);font-size:30px;color:var(--gold2);display:block;line-height:1.1}
+.dist b small{font-size:14px;margin-left:3px;font-family:var(--sans);font-weight:600}
+.dist span{font-size:14.5px;color:var(--mute-d);display:block;margin-top:8px;line-height:1.45}
+.road{margin-top:40px;border-left:3px solid var(--gold);padding:6px 0 6px 24px;font-family:var(--serif);font-size:clamp(20px,2.6vw,30px);line-height:1.4;max-width:30em}
+
+/* reveal */
+.reveal-head{text-align:center;max-width:860px;margin-inline:auto}
+.reveal-head .eyebrow{justify-content:center}
+.reveal-head .lead{margin-inline:auto}
+.big50{font-family:var(--serif);font-size:clamp(120px,26vw,300px);font-weight:700;line-height:.86;background:linear-gradient(180deg,var(--gold2),var(--gold) 60%,#8a6a35);-webkit-background-clip:text;background-clip:text;color:transparent;margin:10px 0 0}
+.gal{margin-top:60px;display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
+.gal figure{border-radius:var(--r);overflow:hidden;position:relative;background:var(--ink3)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figure:first-child{grid-row:span 2;min-height:420px}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;background:linear-gradient(transparent,rgba(13,19,31,.85));font-size:14px;color:#fff}
+.feat{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat article{border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:30px;background:rgba(255,255,255,.03)}
+.feat .n{font-family:var(--serif);color:var(--gold2);font-size:15px;letter-spacing:.14em}
+.feat h3{margin:12px 0 10px;color:#fff}
+.feat p{color:var(--mute-d);font-size:15.5px}
+.feat .note{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:600;color:var(--ember);letter-spacing:.04em}
+
+/* income */
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:56px}
+.stack{display:grid;gap:10px}
+.floor{border-radius:14px;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:18px;border:1px solid var(--line);background:var(--paper)}
+.floor .lv{font-size:12px;font-weight:700;letter-spacing:.16em;color:var(--mute);text-transform:uppercase}
+.floor h3{margin-top:4px;font-size:20px}
+.floor p{font-size:14.5px;color:var(--mute);margin-top:4px}
+.floor b{font-family:var(--serif);font-size:clamp(22px,2.6vw,30px);white-space:nowrap;text-align:right;color:var(--ink)}
+.floor b small{display:block;font-family:var(--sans);font-size:12px;font-weight:500;color:var(--mute)}
+.floor.g{background:var(--ink);color:#fff;border-color:var(--ink)}
+.floor.g b{color:var(--gold2)}.floor.g p,.floor.g .lv,.floor.g b small{color:var(--mute-d)}
+.proof{margin-top:16px;font-size:14.5px;padding:14px 18px;border-radius:12px;background:#fbf3e2;border:1px solid #ecd9ad;color:#6a5223}
+.calc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:0 30px 60px -40px rgba(28,35,51,.35)}
+.calc h3{margin-bottom:6px}
+.calc>p{font-size:14.5px;color:var(--mute);margin-bottom:22px}
+.calc label{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--mute);display:block;margin:18px 0 8px}
+.calc select{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:#fff;font:inherit;font-weight:600;color:var(--text)}
+.calc input[type=range]{width:100%;accent-color:var(--gold)}
+.rent-out{display:flex;justify-content:space-between;font-size:14px;color:var(--mute)}
+.rent-out b{color:var(--ink);font-size:17px}
+.rows{margin-top:22px;border-top:1px solid var(--line)}
+.rows div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.rows div span{color:var(--mute)}
+.rows div b{font-family:var(--serif);font-size:18px;text-align:right}
+.rows div.hl b{color:var(--ok)}
+.rows div.tot{border-bottom:0;padding-top:18px}
+.rows div.tot b{font-size:30px;color:var(--ink)}
+.fine{font-size:12.5px;color:var(--mute);margin-top:14px;line-height:1.55}
+
+/* future */
+.tl{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:t}
+.tl article{border-top:2px solid var(--gold);padding-top:22px}
+.tl .yr{font-family:var(--serif);font-size:15px;letter-spacing:.14em;color:var(--gold2)}
+.tl h3{margin:10px 0;color:#fff;font-size:21px}
+.tl p{font-size:15px;color:var(--mute-d)}
+.quote{margin-top:64px;padding:38px;border-radius:var(--r);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.quote b{font-family:var(--serif);font-size:clamp(56px,8vw,96px);line-height:1;color:var(--gold2)}
+.quote p{color:#dfe3ec;font-size:17px}
+
+/* units */
+.board-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px}
+.left{font-family:var(--serif);font-weight:700;line-height:1;font-size:clamp(64px,10vw,120px);color:var(--ink)}
+.left small{font-size:.22em;font-family:var(--sans);font-weight:600;color:var(--mute);margin-left:10px;letter-spacing:.02em}
+.meter{height:10px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:24px}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sold),var(--ember));border-radius:99px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
+.legend{display:flex;gap:18px;font-size:13.5px;color:var(--mute);margin-top:14px;flex-wrap:wrap}
+.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:7px;vertical-align:-1px}
+.legend .a::before{background:#fff;border:1.5px solid var(--ok)}.legend .s::before{background:#d9d2c4}.legend .c::before{background:var(--gold)}
+.board{margin-top:36px;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:start}
+.blocks{display:grid;gap:16px}
+.blk{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.blk-h{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:12px}
+.blk-h b{font-family:var(--serif);font-size:18px}
+.blk-h span{font-size:13px;color:var(--mute)}
+.blk-h em{font-style:normal;font-weight:700;color:var(--ember)}
+.cells{display:flex;flex-wrap:wrap;gap:6px}
+.cell{width:44px;height:52px;border-radius:8px;border:1.5px solid var(--ok);background:#fff;font-weight:700;font-size:14px;color:var(--ink);display:grid;place-items:center;transition:.15s;position:relative}
+.cell.cn{width:58px;border-color:var(--gold);box-shadow:inset 0 -4px 0 var(--gold)}
+.cell:hover:not(.sold){transform:translateY(-3px);box-shadow:0 8px 16px -8px rgba(0,0,0,.35)}
+.cell.cn:hover:not(.sold){box-shadow:inset 0 -4px 0 var(--gold),0 8px 16px -8px rgba(0,0,0,.35)}
+.cell.sold{background:#e6dfd2;border-color:#e6dfd2;color:#a79f90;cursor:not-allowed;text-decoration:line-through;box-shadow:none}
+.cell.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.detail{position:sticky;top:88px;background:var(--ink);color:#fff;border-radius:var(--r);padding:30px}
+.detail .u{font-size:12.5px;letter-spacing:.16em;font-weight:700;color:var(--gold2);text-transform:uppercase}
+.detail h3{font-size:30px;margin:8px 0 4px;color:#fff}
+.detail .ty{color:var(--mute-d);font-size:15px}
+.detail dl{margin:20px 0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:15px}
+.detail dt{color:var(--mute-d)}.detail dd{text-align:right;font-weight:600}
+.detail .pr{font-family:var(--serif);font-size:34px;color:var(--gold2);line-height:1.1}
+.detail .btn{width:100%;margin-top:20px}
+.detail .empty{color:var(--mute-d);font-size:15.5px}
+
+/* offer */
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.offer article{border-radius:var(--r);padding:32px;background:linear-gradient(160deg,var(--ink3),var(--ink2));border:1px solid rgba(255,255,255,.1)}
+.offer b{font-family:var(--serif);font-size:clamp(40px,5vw,60px);line-height:1;color:var(--gold2);display:block}
+.offer h3{color:#fff;margin:14px 0 8px;font-size:21px}
+.offer p{color:var(--mute-d);font-size:15px}
+.facts{margin-top:52px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.facts div{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:15.5px}
+.facts span{color:var(--mute-d)}.facts b{text-align:right;font-weight:600}
+
+/* faq */
+.faq{max-width:820px;margin:48px auto 0}
+.faq details{border-bottom:1px solid var(--line);padding:22px 0}
+.faq summary{list-style:none;cursor:pointer;font-family:var(--serif);font-weight:700;font-size:clamp(18px,2.2vw,22px);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);font-weight:400;font-size:28px;color:var(--gold);transition:transform .25s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{margin-top:14px;color:var(--mute);font-size:16px}
+
+/* final */
+.final{background:var(--ink);color:#fff;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;background:url(img/street-day.jpg) center/cover;opacity:.16}
+.final .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.steps{margin-top:34px;display:grid;gap:18px;counter-reset:s}
+.steps li{list-style:none;display:flex;gap:16px;align-items:flex-start;color:#dfe3ec;font-size:16px}
+.steps li::before{counter-increment:s;content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--gold2);color:var(--gold2);display:grid;place-items:center;font-family:var(--serif);font-size:15px}
+.form{background:#fff;color:var(--text);border-radius:22px;padding:34px;box-shadow:0 50px 100px -40px rgba(0,0,0,.8)}
+.form h3{font-size:26px}
+.form>p{font-size:14.5px;color:var(--mute);margin:6px 0 20px}
+.form label{display:block;font-size:13px;font-weight:700;letter-spacing:.05em;color:var(--mute);margin:16px 0 7px}
+.form input,.form select{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--paper);font:inherit;color:var(--text)}
+.form input:focus,.form select:focus,.calc select:focus{outline:2px solid var(--gold);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-size:14.5px;font-weight:600;background:var(--paper)}
+.chips button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.form .btn{width:100%;margin-top:24px;padding:18px}
+.form .fine{text-align:center}
+footer{background:#080c14;color:#7c8498;font-size:12.5px;padding:40px 0 110px;line-height:1.7}
+footer b{color:#c5cad6}
+
+/* sticky bar */
+.bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:rgba(13,19,31,.94);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:10px 10px 10px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#fff;transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.7,.2,1);max-width:560px;margin-inline:auto;box-shadow:0 20px 50px -20px rgba(0,0,0,.8)}
+.bar.show{transform:none}
+.bar div{font-size:13.5px;line-height:1.35;color:var(--mute-d)}
+.bar div b{display:block;color:#fff;font-size:15px}
+.bar .btn{padding:13px 20px;font-size:15px}
+
+/* reveal anim */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}.js .rv.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.hero-bg{animation:none;transform:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  body{font-size:16px}
+  .stats{grid-template-columns:1fr 1fr}
+  .leak,.inc,.board,.final .wrap{grid-template-columns:1fr}
+  .dist{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr}.gal figure:first-child{min-height:0}.gal figure{aspect-ratio:16/10}
+  .feat,.offer{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:1fr}
+  .detail{position:static}
+  .quote{grid-template-columns:1fr;gap:10px}
+  .nav .btn{display:none}
+  .loc-img img{aspect-ratio:16/10}
+}
+@media (min-width:901px){.bar{display:none}footer{padding-bottom:40px}}
+.mb{display:none}
+.legend #asAt{margin-left:auto}.legend #asAt::before{display:none}
+@media (max-width:520px){
+  .mb{display:inline}
+  .logo{font-size:12.5px;letter-spacing:.03em;gap:8px;min-width:0}
+  .logo b{width:30px;height:30px;flex:none}
+  .nav-r{flex:none}
+  .nudge .btn{width:100%;white-space:normal;text-align:center}
+  h1{font-size:40px}
+  .wrap{width:calc(100% - 32px)}
+  .pick-row button{width:100%}
+  .tl{grid-template-columns:1fr}
+  .stat{padding:22px 18px}
+  .calc,.form,.leak-card{padding:24px}
+  .cell{width:40px;height:48px}.cell.cn{width:52px}
+  .floor{padding:18px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');document.documentElement.dataset.lang=(function(){try{return localStorage.getItem('kc-lang')}catch(e){}})()||'zh';</script>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>K</b><span class="zh">KUNDANG 全新商业</span><span class="en">KUNDANG NEW COMMERCIAL</span></a>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-setlang="zh">中文</button><button data-setlang="en">EN</button>
+      </div>
+      <a class="btn btn-gold" href="#book"><span class="zh">预约看地</span><span class="en">Book a viewing</span></a>
+    </div>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<!-- ============ 1. HOOK ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="tag"><span class="zh">Kundang · 全区只有 50 间</span><span class="en">Kundang · Only 50 units in total</span></div>
+    <h1>
+      <span class="zh">Kundang <br class="mb">住了近 8 万人。<br>他们的钱，<br class="mb"><em class="g">都去哪里花？</em></span>
+      <span class="en">Nearly 80,000 people live around Kundang. <em class="g">Where do they spend?</em></span>
+    </h1>
+    <p class="sub">
+      <span class="zh">答案是 7.5 公里外的 Rawang。<br>——这个答案，到 2028 年就要改写了。</span>
+      <span class="en">The answer today: Rawang, 7.5 km away.<br>That answer is about to change in 2028.</span>
+    </p>
+    <div class="pick">
+      <div class="pick-q"><span class="zh">先告诉我，你是哪一种买家？（往下的内容会不一样）</span><span class="en">First — which buyer are you?</span></div>
+      <div class="pick-row" id="pick">
+        <button data-goal="own"><span class="ic">🏪</span><span><span class="zh">我要自己开店</span><span class="en">I want my own shop</span></span></button>
+        <button data-goal="invest"><span class="ic">📈</span><span><span class="zh">我要收租投资</span><span class="en">I want rental income</span></span></button>
+        <button data-goal="both"><span class="ic">🔑</span><span><span class="zh">楼下自用，楼上收租</span><span class="en">Use one floor, rent the other</span></span></button>
+      </div>
+    </div>
+    <div class="scroll-hint"><span class="zh">往下滑，3 分钟看懂</span><span class="en">Scroll — 3 minutes</span></div>
+  </div>
+</section>
+
+<!-- ============ 2. THE GAP ============ -->
+<section class="paper" id="gap">
+  <div class="wrap">
+    <div class="eyebrow rv"><i>1</i><span class="zh">被忽略的缺口</span><span class="en">The gap nobody filled</span></div>
+    <h2 class="rv">
+      <span class="zh">人一直搬进来，<br><em class="g">店却没有跟上。</em></span>
+      <span class="en">People keep moving in. <em class="g">The shops didn't follow.</em></span>
+    </h2>
+    <p class="lead rv">
+      <span class="zh">Gamuda Gardens、Scientex Kundang Jaya、Kundang Estates、M Residence……新镇一个接一个交屋。可是要买东西、吃一顿好的、看医生、送孩子补习，很多人还是得开车出去。</span>
+      <span class="en">Gamuda Gardens, Scientex Kundang Jaya, Kundang Estates, M Residence — township after township is handing over keys. Yet for shopping, dining, clinics and tuition, most families still drive out.</span>
+    </p>
+
+    <div class="stats rv">
+      <div class="stat"><b><span data-count="80" data-prefix="~">~80</span><small>K</small></b><span><span class="zh">周边人口 7–8 万，新屋交付还在继续</span><span class="en">70–80K residents and still growing with new handovers</span></span></div>
+      <div class="stat"><b><span data-count="7.5" data-dec="1">7.5</span><small>KM</small></b><span><span class="zh">最近的 AEON 在 Rawang</span><span class="en">to the nearest AEON, in Rawang</span></span></div>
+      <div class="stat"><b><span data-count="100" data-suffix="K+">100K+</span></b><span><span class="zh">MPS 道路扩建所规划承载的人口</span><span class="en">population the MPS road-widening is planned to support</span></span></div>
+      <div class="stat"><b><span data-count="50">50</span></b><span><span class="zh">这个项目的全部单位。卖完就没有</span><span class="en">units in this project. That's all of them.</span></span></div>
+    </div>
+
+    <div class="leak">
+      <div class="leak-card rv">
+        <h3><span class="zh">今天：钱往外流</span><span class="en">Today: money leaks out</span></h3>
+        <ul>
+          <li><span>AEON Rawang</span><b>7.5 km</b></li>
+          <li><span>Lotus's</span><b>12 km</b></li>
+          <li><span>NSK</span><b>13 km</b></li>
+          <li><span>KPJ Rawang</span><b>11 km</b></li>
+        </ul>
+        <p><span class="zh">每一趟开出去的车，都是本地店铺没赚到的钱。</span><span class="en">Every car that drives out is revenue a local shop never saw.</span></p>
+      </div>
+      <div class="leak-card hot rv d1">
+        <h3><span class="zh">明天：谁接住这些消费？</span><span class="en">Tomorrow: who catches that spending?</span></h3>
+        <ul>
+          <li><span><span class="zh">新镇家庭</span><span class="en">New-township families</span></span><b><span class="zh">日常消费</span><span class="en">Daily spend</span></b></li>
+          <li><span><span class="zh">工业区上班族</span><span class="en">Industrial-zone workers</span></span><b><span class="zh">午餐 · 服务</span><span class="en">Lunch · services</span></b></li>
+          <li><span><span class="zh">工厂与公司</span><span class="en">Factories & firms</span></span><b>B2B</b></li>
+          <li><span><span class="zh">新村老街坊</span><span class="en">Old-town residents</span></span><b><span class="zh">0.5 km 步行可达</span><span class="en">0.5 km away</span></b></li>
+        </ul>
+        <p><span class="zh">答案很简单——离他们最近、又在大路边的那一排店。</span><span class="en">Simple: the row of shops closest to them, right on the main road.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. LOCATION ============ -->
+<section class="dark" id="location">
+  <div class="wrap">
+    <div class="eyebrow rv"><i>2</i><span class="zh">位置就是答案</span><span class="en">Location is the answer</span></div>
+    <h2 class="rv">
+      <span class="zh">每个人进出 Kundang，<br><em class="g">都要经过这条路。</em></span>
+      <span class="en">Everyone going in or out of Kundang <em class="g">passes this road.</em></span>
+    </h2>
+    <p class="lead rv">
+      <span class="zh">Jalan Kundang (B149) 是工业车流和每日通勤的必经之路。这个全新商业项目就在这条大路边，同时接通 Jalan BBK Utama。不用找，开过就看到。</span>
+      <span class="en">Jalan Kundang (B149) is the mandatory route for industrial traffic and daily commuters. This new commercial project fronts it directly, with a second access from Jalan BBK Utama.</span>
+    </p>
+
+    <figure class="loc-img rv">
+      <img src="img/aerial.jpg" alt="Aerial view of Kundang and future development land" loading="lazy">
+      <figcaption><span class="zh">实景航拍 · Kundang 新村与旁边未来的商业、住宅发展地</span><span class="en">Actual aerial · Kundang old town and the future commercial & residential land beside it</span></figcaption>
+    </figure>
+
+    <div class="dist">
+      <div class="rv"><b>2<small>km</small></b><span><span class="zh">LATAR 大道 Kundang 收费站，约 4 分钟</span><span class="en">to LATAR Kundang toll, ~4 min</span></span></div>
+      <div class="rv d1"><b>6<small>min</small></b><span><span class="zh">Guthrie Corridor Expressway 交汇处</span><span class="en">to Guthrie Corridor Expressway interchange</span></span></div>
+      <div class="rv d2"><b>25<small>min</small></b><span><span class="zh">直通 Kepong 与 Kota Damansara</span><span class="en">to Kepong & Kota Damansara</span></span></div>
+      <div class="rv d3"><b>0.5<small>km</small></b><span><span class="zh">Kundang 新村，1 分钟</span><span class="en">to Kundang old town, 1 min</span></span></div>
+      <div class="rv"><b>0.7<small>km</small></b><span>SJK(C) Kundang</span></div>
+      <div class="rv d1"><b>1.5<small>km</small></b><span>Econsave Hypermarket</span></div>
+      <div class="rv d2"><b>3.5<small>km</small></b><span>Kundang Estates</span></div>
+      <div class="rv d3"><b>5<small>km</small></b><span>Gamuda Gardens</span></div>
+    </div>
+
+    <div class="nudge rv">
+      <a class="btn btn-ghost" id="mapLink" target="_blank" rel="noopener" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="zh">在 Google Maps 打开</span><span class="en">Open in Google Maps</span></a>
+      <small><span class="zh">地图看十次，不如现场站一次。</span><span class="en">Ten looks at a map don't equal one visit.</span></small>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. REVEAL ============ -->
+<section class="dark2" id="project">
+  <div class="wrap">
+    <div class="reveal-head">
+      <div class="eyebrow rv"><i>3</i><span class="zh">所以，有人在这里盖了</span><span class="en">So someone built here</span></div>
+      <div class="big50 rv">50</div>
+      <h2 class="rv">
+        <span class="zh">Kundang 全新商业。<br>只有 50 间，不会再加。</span>
+        <span class="en">Kundang's new commercial centre. Fifty units. No phase two.</span>
+      </h2>
+      <p class="lead rv">
+        <span class="zh">6.45 英亩商业地，5 栋 2 层与 3 层店铺办公楼。环绕式停车位，预计 2028 年底完工。</span>
+        <span class="en">6.45 acres of commercial land. Five blocks of 2- and 3-storey shop offices, wrapped in parking. Expected completion end-2028.</span>
+      </p>
+    </div>
+
+    <div class="gal">
+      <figure class="rv"><img src="img/hero-dusk.jpg" alt="Dusk render of the shop offices" loading="lazy"><figcaption><span class="zh">转角 3 层单位 · 全高玻璃立面</span><span class="en">3-storey corner unit · full-height glazing</span></figcaption></figure>
+      <figure class="rv d1"><img src="img/street-day.jpg" alt="Street view render" loading="lazy"><figcaption><span class="zh">街景 · 店门前就是车位</span><span class="en">Street view · parking at the door</span></figcaption></figure>
+      <figure class="rv d2"><img src="img/dual-frontage.jpg" alt="Dual frontage ground floor" loading="lazy"><figcaption><span class="zh">Block 5 · 前后双门面底楼</span><span class="en">Block 5 · dual-frontage ground floor</span></figcaption></figure>
+    </div>
+
+    <div class="feat">
+      <article class="rv"><div class="n">01</div>
+        <h3><span class="zh">全高玻璃橱窗</span><span class="en">Full-height glass</span></h3>
+        <p><span class="zh">整面玻璃就是你的招牌。路过的车一眼看到你卖什么。</span><span class="en">The whole façade is your signboard — passing traffic sees what you sell.</span></p></article>
+      <article class="rv d1"><div class="n">02</div>
+        <h3><span class="zh">私人电梯</span><span class="en">Private lift</span></h3>
+        <p><span class="zh">楼上不再是“难租的二楼”。诊所、补习中心、办公室都能直接上楼。</span><span class="en">Upper floors stop being "hard to let". Clinics, tuition centres and offices go straight up.</span></p>
+        <span class="note"><span class="zh">仅限 6 间转角 3 层单位</span><span class="en">Only on the six 3-storey corner units</span></span></article>
+      <article class="rv d2"><div class="n">03</div>
+        <h3><span class="zh">前后双门面</span><span class="en">Dual frontage</span></h3>
+        <p><span class="zh">一间店，两个门口，两边都有人流。7 尺宽通道前后贯通。</span><span class="en">One shop, two entrances, footfall from both sides with a 7 ft through-way.</span></p>
+        <span class="note"><span class="zh">仅限 Block 5</span><span class="en">Block 5 only</span></span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. MONEY ============ -->
+<section id="income">
+  <div class="wrap">
+    <div class="eyebrow rv"><i>4</i><span class="zh">算一算</span><span class="en">Run the numbers</span></div>
+    <h2 class="rv">
+      <span class="zh" data-goal-text="own">楼下开你的店，<br><em class="g">楼上帮你供一部分。</em></span>
+      <span class="zh" data-goal-text="invest" hidden>一间店，<br><em class="g">两份租金。</em></span>
+      <span class="zh" data-goal-text="both" hidden>楼下自用，<br><em class="g">楼上收租。</em></span>
+      <span class="en">One shop lot, <em class="g">two income streams.</em></span>
+    </h2>
+    <p class="lead rv">
+      <span class="zh">2 层与 3 层的设计，就是为了让每一层都能独立使用。下面是销售资料里的区域租金参考——右边的计算器，你可以自己调。</span>
+      <span class="en">Every floor is designed to work on its own. Below are the area rental references from the sales material — adjust the calculator yourself.</span>
+    </p>
+
+    <div class="inc">
+      <div>
+        <div class="stack rv">
+          <div class="floor"><div><div class="lv">1F / 2F</div><h3><span class="zh">楼上</span><span class="en">Upper floor</span></h3><p><span class="zh">办公室 · 诊所 · 补习中心</span><span class="en">Offices · clinics · tuition</span></p></div><b>RM1,500+<small><span class="zh">每月参考</span><span class="en">per month, reference</span></small></b></div>
+          <div class="floor g"><div><div class="lv">G</div><h3><span class="zh">底楼</span><span class="en">Ground floor</span></h3><p><span class="zh">零售 · 餐饮 · 药房</span><span class="en">Retail · F&B · pharmacy</span></p></div><b>RM3,500–4,000<small><span class="zh">每月参考</span><span class="en">per month, reference</span></small></b></div>
+        </div>
+        <div class="proof rv" id="rentProof"></div>
+        <p class="fine rv"><span class="zh">目标净租金回报 4.5%–5.0% / 年（销售资料估算，非保证）。</span><span class="en">Target net rental yield 4.5%–5.0% p.a. (sales-material estimate, not guaranteed).</span></p>
+      </div>
+
+      <div class="calc rv d1">
+        <h3><span class="zh">你的数字</span><span class="en">Your numbers</span></h3>
+        <p><span class="zh">选一个户型，拉一下租金。</span><span class="en">Pick a type, drag the rent.</span></p>
+        <label for="cType"><span class="zh">户型</span><span class="en">UNIT TYPE</span></label>
+        <select id="cType"></select>
+        <label for="cRent"><span class="zh">你估计的整栋月租</span><span class="en">YOUR ESTIMATED TOTAL MONTHLY RENT</span></label>
+        <input type="range" id="cRent" min="3000" max="14000" step="100" value="5000">
+        <div class="rent-out"><span>RM3,000</span><b id="cRentV">RM5,000</b><span>RM14,000</span></div>
+        <div class="rows">
+          <div><span><span class="zh">售价</span><span class="en">List price</span></span><b id="oPrice"></b></div>
+          <div class="hl"><span id="oRebL"></span><b id="oReb"></b></div>
+          <div><span><span class="zh">回扣后净价</span><span class="en">Net after rebate</span></span><b id="oNet"></b></div>
+          <div><span><span class="zh">订金</span><span class="en">Booking fee</span></span><b id="oBook"></b></div>
+          <div class="tot"><span><span class="zh">毛租金回报（按净价）</span><span class="en">Gross yield on net price</span></span><b id="oYield"></b></div>
+        </div>
+        <p class="fine"><span class="zh">仅为简单算术示意，未计贷款利息、维修、空置与税务，不构成财务建议。实际以发展商最新价目与买卖合约为准。</span><span class="en">Simple arithmetic for illustration only; excludes loan interest, maintenance, vacancy and tax. Not financial advice. Subject to the developer's latest price list and SPA.</span></p>
+      </div>
+    </div>
+
+    <div class="nudge rv">
+      <a class="btn btn-line" data-wa="calc" href="#book"><span class="zh">把这个户型的完整计算发给我</span><span class="en">Send me the full breakdown for this type</span></a>
+      <small><span class="zh">含贷款估算，WhatsApp 回复。</span><span class="en">Including loan estimates, via WhatsApp.</span></small>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. FUTURE ============ -->
+<section class="dark" id="future">
+  <div class="wrap">
+    <div class="eyebrow rv"><i>5</i><span class="zh">你买的不是今天</span><span class="en">You're not buying today</span></div>
+    <h2 class="rv">
+      <span class="zh">你买的是<br><em class="g">2036 年的 Kundang。</em></span>
+      <span class="en">You're buying <em class="g">Kundang in 2036.</em></span>
+    </h2>
+    <p class="lead rv">
+      <span class="zh">Kundang 正在从工业郊区，变成低密度的新市镇。店铺的价值，跟着人口走。</span>
+      <span class="en">Kundang is shifting from an industrial suburb into a low-density modern township. Shop values follow population.</span>
+    </p>
+
+    <div class="tl">
+      <article class="rv"><div class="yr">2026 →</div>
+        <h3><span class="zh">新镇陆续入伙</span><span class="en">Townships fill up</span></h3>
+        <p><span class="zh">周边新屋持续交付，城市家庭迁入，消费力升级。</span><span class="en">Ongoing handovers bring urban families and stronger spending.</span></p></article>
+      <article class="rv d1"><div class="yr">2028</div>
+        <h3><span class="zh">全新商业完工</span><span class="en">The project completes</span></h3>
+        <p><span class="zh">把过去流向外镇的消费，留在本地。</span><span class="en">Captures local spending once lost to outer towns.</span></p></article>
+      <article class="rv d2"><div class="yr"><span class="zh">规划中</span><span class="en">PLANNED</span></div>
+        <h3><span class="zh">道路扩建</span><span class="en">Road widening</span></h3>
+        <p><span class="zh">MPS 支持的道路提升，为 10 万以上人口做准备。</span><span class="en">MPS-backed upgrades to support a 100,000+ population.</span></p></article>
+      <article class="rv d3"><div class="yr">→ 2036</div>
+        <h3><span class="zh">Tasik Biru 休闲经济</span><span class="en">Tasik Biru leisure</span></h3>
+        <p><span class="zh">生态旅游投资带动周末人潮与生活零售。</span><span class="en">Eco-tourism investment lifts weekend traffic and lifestyle retail.</span></p></article>
+    </div>
+
+    <div class="quote rv">
+      <b>~600</b>
+      <p><span class="zh"><strong>还有一件事：</strong>旁边还有一个住宅项目正在筹备，<strong>约 600 个单位</strong>。也就是说，你的店开张以后，隔壁还会再多几百户固定客人。</span>
+         <span class="en"><strong>One more thing:</strong> a residential project of <strong>about 600 homes</strong> is being prepared nearby. Several hundred more households of regular customers, next door.</span></p>
+    </div>
+    <p class="fine rv" style="color:var(--mute-d)"><span class="zh">以上为区域规划与发展展望，时间与内容以有关当局及发展商最终公布为准。</span><span class="en">Forward-looking area outlook; timing and details subject to the authorities' and developer's final announcements.</span></p>
+  </div>
+</section>
+
+<!-- ============ 7. SCARCITY ============ -->
+<section class="paper" id="units">
+  <div class="wrap">
+    <div class="eyebrow rv"><i>6</i><span class="zh">现在还剩哪几间</span><span class="en">What's still available</span></div>
+    <div class="board-top rv">
+      <h2><span class="zh">好位置，<br><em class="g">是先到先得的。</em></span><span class="en">Good positions go <em class="g">first-come, first-served.</em></span></h2>
+      <div class="left"><span id="leftN">–</span><small>/ 50 <span class="zh">间可选</span><span class="en">available</span></small></div>
+    </div>
+    <div class="meter rv"><i id="meter"></i></div>
+    <div class="legend rv">
+      <span class="a"><span class="zh">可选</span><span class="en">Available</span></span>
+      <span class="c"><span class="zh">转角单位</span><span class="en">Corner unit</span></span>
+      <span class="s"><span class="zh">已被选走</span><span class="en">Taken</span></span>
+      <span id="asAt"></span>
+    </div>
+
+    <div class="board">
+      <div class="blocks rv" id="blocks"></div>
+      <aside class="detail rv d1" id="detail"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. OFFER ============ -->
+<section class="dark2" id="offer">
+  <div class="wrap">
+    <div class="eyebrow rv"><i>7</i><span class="zh">现在进场的配套</span><span class="en">The package right now</span></div>
+    <h2 class="rv"><span class="zh">订金 RM10,000 起，<br><em class="g">律师费发展商承担。</em></span><span class="en">Book from RM10,000. <em class="g">Legal fees on the developer.</em></span></h2>
+
+    <div class="offer">
+      <article class="rv"><b>5% + 2%</b>
+        <h3><span class="zh">现金回扣</span><span class="en">Rebate</span></h3>
+        <p><span class="zh">Block 2、3、4：签 SPA 回扣 5%，Stage 2b 再回扣 2%。Block 1、5：签 SPA 回扣 3%。</span><span class="en">Blocks 2, 3, 4: 5% upon SPA signing + 2% at Stage 2b. Blocks 1 & 5: 3% upon SPA signing.</span></p></article>
+      <article class="rv d1"><b>RM0</b>
+        <h3><span class="zh">律师费全免</span><span class="en">Legal fees waived</span></h3>
+        <p><span class="zh">买卖合约 (SPA) 与贷款合约的律师费及杂费，全部豁免。</span><span class="en">SPA and loan legal fees and disbursements are waived.</span></p></article>
+      <article class="rv d2"><b>RM10K</b>
+        <h3><span class="zh">低订金锁定</span><span class="en">Low booking fee</span></h3>
+        <p><span class="zh">Block 2–4 中间单位 RM10,000；Block 1、5 中间单位 RM20,000；3 层单位 RM30,000。</span><span class="en">RM10,000 for intermediates in Blocks 2–4; RM20,000 in Blocks 1 & 5; RM30,000 for 3-storey units.</span></p></article>
+    </div>
+
+    <div class="facts rv">
+      <div><span><span class="zh">总单位</span><span class="en">Total units</span></span><b><span class="zh">50 间 · 2 层与 3 层</span><span class="en">50 · 2 & 3 storey</span></b></div>
+      <div><span><span class="zh">地点</span><span class="en">Location</span></span><b>Pekan Pengkalan Kundang, Gombak, Selangor</b></div>
+      <div><span><span class="zh">地契</span><span class="en">Title</span></span><b><span class="zh">商业地 · 99 年租赁</span><span class="en">Commercial · 99-year leasehold</span></b></div>
+      <div><span><span class="zh">地方政府</span><span class="en">Local council</span></span><b>Majlis Perbandaran Selayang</b></div>
+      <div><span><span class="zh">建筑面积</span><span class="en">Built-up</span></span><b>2,660 – 6,937 sf</b></div>
+      <div><span><span class="zh">售价</span><span class="en">Price</span></span><b>RM1,108,000 – RM3,088,000</b></div>
+      <div><span><span class="zh">预计完工</span><span class="en">Expected completion</span></span><b><span class="zh">2028 年底</span><span class="en">End 2028</span></b></div>
+      <div><span><span class="zh">配合银行</span><span class="en">Panel bankers</span></span><b>UOB · AmBank · CIMB</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. OBJECTIONS ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="reveal-head">
+      <div class="eyebrow rv"><i>8</i><span class="zh">你心里大概在想</span><span class="en">What you're probably thinking</span></div>
+      <h2 class="rv"><span class="zh">问得好。</span><span class="en">Fair questions.</span></h2>
+    </div>
+    <div class="faq">
+      <details class="rv"><summary><span class="zh">Kundang 会不会太偏？</span><span class="en">Isn't Kundang too far out?</span></summary>
+        <p><span class="zh">离 LATAR 收费站 2 公里，约 25 分钟到 Kepong 和 Kota Damansara。更重要的是，店铺做的是本地 7–8 万人的生意，不是靠外地人开车进来。最好的判断方法，是傍晚自己到 Jalan Kundang 站十分钟看车流。</span><span class="en">It's 2 km from the LATAR toll and about 25 minutes from Kepong and Kota Damansara. More importantly, these shops serve the 70–80K people already here. The best test: stand on Jalan Kundang for ten minutes at dusk and watch the traffic.</span></p></details>
+      <details class="rv"><summary><span class="zh">还没建好，现在买会不会太早？</span><span class="en">It isn't built yet — is it too early?</span></summary>
+        <p><span class="zh">预计 2028 年底完工。期房的好处是现在可以选位置——转角、面向大路、双门面这些单位是先被选走的，上面的单位图你已经看到了。等建好再来，剩下的是别人挑剩的。</span><span class="en">Completion is expected end-2028. Buying early means choosing position — corner, main-road and dual-frontage units go first, as the unit board above shows. After completion you choose from what others left.</span></p></details>
+      <details class="rv"><summary><span class="zh">99 年地契，会不会吃亏？</span><span class="en">Is 99-year leasehold a problem?</span></summary>
+        <p><span class="zh">这是商业地契的 99 年租赁地。Selangor 多数新商业项目都是这个性质，银行照常批贷款（配合银行：UOB、AmBank、CIMB）。看地时我会把地契资料给你看。</span><span class="en">It's a commercial title on 99-year leasehold, typical for new commercial projects in Selangor and financed as usual by the panel banks (UOB, AmBank, CIMB). I'll walk you through the title details at the viewing.</span></p></details>
+      <details class="rv"><summary><span class="zh">租不租得出去？</span><span class="en">Will it actually rent out?</span></summary>
+        <p><span class="zh">没有人能保证。可以看的是事实：人口 7–8 万并在增长、大路门面、全区只有 50 间、旁边还有约 600 户的住宅项目在筹备。销售资料的目标净回报是 4.5%–5.0%，属于估算。来现场，我带你看周边现有店铺的出租情况。</span><span class="en">Nobody can guarantee it. What you can check are the facts: 70–80K and growing, main-road frontage, only 50 units, and ~600 homes planned next door. The 4.5%–5.0% target yield is an estimate. On site I'll show you how existing shops nearby are letting.</span></p></details>
+      <details class="rv"><summary><span class="zh">去看地，是不是一定要买？</span><span class="en">If I view, do I have to buy?</span></summary>
+        <p><span class="zh">不用。看地免费、没有任何义务。大约 30 分钟：看位置、看单位图、帮你算一次数。合适再谈，不合适就当认识一个新地区。</span><span class="en">No. Viewing is free with no obligation. About 30 minutes: see the site, the unit chart and your numbers. If it fits, we talk. If not, you've learned a new area.</span></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. ACTION ============ -->
+<section class="final" id="book">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow rv"><i>9</i><span class="zh">最后一步</span><span class="en">Last step</span></div>
+      <h2 class="rv"><span class="zh">纸上看十次，<br><em class="g">不如现场站十分钟。</em></span><span class="en">Ten minutes on site beats <em class="g">ten brochures.</em></span></h2>
+      <ul class="steps rv">
+        <li><span><span class="zh">填右边的表，按一下，WhatsApp 自动打开</span><span class="en">Fill the form — WhatsApp opens with your details</span></span></li>
+        <li><span><span class="zh">我会回复确认时间，并发你最新的单位图与价目</span><span class="en">I confirm the time and send the latest unit chart and price list</span></span></li>
+        <li><span><span class="zh">现场 30 分钟：看位置、选单位、算清楚</span><span class="en">30 minutes on site: location, units, numbers</span></span></li>
+      </ul>
+      <p class="lead rv" style="font-size:16px"><span class="zh">目前还有 <strong id="leftN2" style="color:var(--gold2)">–</strong> 间可选。你想要的那一间还在不在，问了才知道。</span><span class="en"><strong id="leftN2e" style="color:var(--gold2)">–</strong> units are still open. Whether yours is one of them — ask and find out.</span></p>
+    </div>
+
+    <form class="form rv d1" id="form" novalidate>
+      <h3><span class="zh">预约私人看地</span><span class="en">Book a private viewing</span></h3>
+      <p><span class="zh">免费 · 无义务 · 约 30 分钟</span><span class="en">Free · no obligation · about 30 minutes</span></p>
+
+      <label for="fName"><span class="zh">怎么称呼你</span><span class="en">YOUR NAME</span></label>
+      <input id="fName" autocomplete="name" required>
+
+      <label><span class="zh">你的目的</span><span class="en">YOUR GOAL</span></label>
+      <div class="chips" id="fGoal">
+        <button type="button" data-goal="own"><span class="zh">自己开店</span><span class="en">Own business</span></button>
+        <button type="button" data-goal="invest"><span class="zh">收租投资</span><span class="en">Investment</span></button>
+        <button type="button" data-goal="both"><span class="zh">自用 + 收租</span><span class="en">Both</span></button>
+      </div>
+
+      <label for="fUnit"><span class="zh">有兴趣的单位</span><span class="en">UNIT OF INTEREST</span></label>
+      <select id="fUnit"></select>
+
+      <label><span class="zh">方便的时间</span><span class="en">PREFERRED TIME</span></label>
+      <div class="chips" id="fWhen">
+        <button type="button" data-v="wd" aria-pressed="false"><span class="zh">平日</span><span class="en">Weekday</span></button>
+        <button type="button" data-v="sat" aria-pressed="true"><span class="zh">星期六</span><span class="en">Saturday</span></button>
+        <button type="button" data-v="sun" aria-pressed="false"><span class="zh">星期日</span><span class="en">Sunday</span></button>
+        <button type="button" data-v="call" aria-pressed="false"><span class="zh">先电话聊</span><span class="en">Call me first</span></button>
+      </div>
+
+      <button class="btn btn-gold" type="submit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        <span class="zh">用 WhatsApp 预约</span><span class="en">Book via WhatsApp</span>
+      </button>
+      <p class="fine"><span class="zh">按下后会打开 WhatsApp，信息已帮你写好，你按发送即可。</span><span class="en">This opens WhatsApp with your message pre-written — just hit send.</span></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b id="ftBrand"></b></p>
+    <p style="margin-top:10px"><span class="zh">免责声明：本页所有资料、图片与效果图仅供参考，可能更改，恕不另行通知。效果图为艺术示意。租金、回报与区域发展展望均为估算或规划，并非保证。售价、配套与单位状态以发展商最新公布及买卖合约为准。本页不构成要约或财务建议。</span>
+    <span class="en">Disclaimer: All information, images and renderings on this page are for reference only and subject to change without notice. Renderings are artist's impressions. Rental, yield and area-outlook figures are estimates or plans, not guarantees. Prices, packages and unit status are subject to the latest release by the developer and the Sale & Purchase Agreement. This page is not an offer or financial advice.</span></p>
+  </div>
+</footer>
+
+<!-- sticky CTA -->
+<div class="bar" id="bar">
+  <div><b><span class="zh">还剩 <span id="leftN3">–</span> / 50 间</span><span class="en"><span id="leftN3e">–</span> of 50 left</span></b><span class="zh">RM1,108,000 起</span><span class="en">From RM1,108,000</span></div>
+  <a class="btn btn-gold" href="#book"><span class="zh">预约看地</span><span class="en">Book viewing</span></a>
+</div>
+
+<script>
+/* =====================================================================
+   ★★★  改这里就好 / EDIT HERE  ★★★
+   以后要更新内容，只需要改这一段，保存，重新上传 —— link 不变。
+   ===================================================================== */
+const CONFIG = {
+  whatsapp: "60162649815",              // ← 你的 WhatsApp 号码（国家代码开头，不要 + 和空格）
+  brand:    "Magdalene Property",       // ← 页脚显示的公司 / 你的名字
+  agentLine:"",                         // ← 例："Jason Tan · REN 12345 · 012-345 6789"（可留空）
+  mapUrl:   "https://www.google.com/maps/search/?api=1&query=Jalan+BBK+Utama+Kundang+Selangor",
+  asAt:     { zh:"更新于 2026 年 10 月", en:"As at Oct 2026" },
+
+  // 已被选走的单位号码（根据 OCT 2026 sale chart 的红点）。卖出一间，就加一个号码。
+  taken: [1,6,7,8,9,10,11,12, 25,26, 35, 39, 41,42,43,44,46,47,48,49,50],
+
+  // 租金参考（显示在“算一算”里）。不要就留空 ""。
+  rentProof: {
+    zh:"租金参考：MR DIY 已确认并营业，月租 RM5,500。",
+    en:"Rental reference: MR DIY confirmed & operating at RM5,500 / month."
+  }
+};
+
+/* 户型与价目（来自 Sales Kit 2026）—— 起价 / 尺寸有变才需要改 */
+const TYPES = {
+  A:{name:"Type A", pos:{zh:"中间",en:"Intermediate"}, size:"20 × 70", storey:2, bu:2660},
+  B:{name:"Type B", pos:{zh:"中间",en:"Intermediate"}, size:"24 × 70", storey:2, bu:3192},
+  C:{name:"Type C", pos:{zh:"中间 · 双门面",en:"Intermediate · dual frontage"}, size:"22 × 77", storey:2, bu:3080},
+  D:{name:"Type D", pos:{zh:"转角",en:"Corner"}, size:"30 × 70", storey:2, bu:3549, corner:true},
+  E:{name:"Type E", pos:{zh:"转角 · 私人电梯",en:"Corner · private lift"}, size:"30 × 70", storey:3, bu:5649, corner:true},
+  F:{name:"Type F", pos:{zh:"转角 · 私人电梯 · 双门面",en:"Corner · private lift · dual frontage"}, size:"34 × 77", storey:3, bu:6937, corner:true}
+};
+const BLOCKS = [
+  {id:1, note:{zh:"面向 Jalan BBK Utama",en:"Facing Jalan BBK Utama"}, rebate:[3,0], units:[[1,"E",2568000],...range(2,11).map(n=>[n,"B",1488000]),[12,"E",2568000]]},
+  {id:2, note:{zh:"中庭 · 最低入场价",en:"Central · lowest entry price"}, rebate:[5,2], units:[[13,"E",2268000],...range(14,25).map(n=>[n,"A",1108000]),[26,"E",2268000]]},
+  {id:3, note:{zh:"中庭",en:"Central"}, rebate:[5,2], units:[[27,"D",1528000],...range(28,34).map(n=>[n,"A",1108000]),[35,"D",1528000]]},
+  {id:4, note:{zh:"精品小栋 · 仅 4 间",en:"Boutique block · 4 units"}, rebate:[5,2], units:[[36,"A",1188000,{zh:"边间",en:"End lot"}],[37,"A",1108000],[38,"A",1108000],[39,"D",1528000]]},
+  {id:5, note:{zh:"面向 Jalan Kundang 大路 · 双门面",en:"Facing Jalan Kundang · dual frontage"}, rebate:[3,0], units:[[40,"F",3088000],...range(41,49).map(n=>[n,"C",1468000]),[50,"F",3088000]]}
+];
+/* ===================== 以下不用改 ===================== */
+
+function range(a,b){const r=[];for(let i=a;i<=b;i++)r.push(i);return r}
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const rm=n=>"RM"+Math.round(n).toLocaleString("en-MY");
+const t=(zh,en)=>`<span class="zh">${zh}</span><span class="en">${en}</span>`;
+const lang=()=>document.documentElement.dataset.lang;
+const state={goal:null,unit:null,when:"sat"};
+
+const UNITS=[];
+BLOCKS.forEach(b=>b.units.forEach(([no,ty,price,posOverride])=>{
+  const T=TYPES[ty];
+  const book = T.storey===3 ? 30000 : ((b.id===1||b.id===5) ? 20000 : 10000);
+  UNITS.push({no,ty,price,block:b.id,rebate:b.rebate,book,pos:posOverride||T.pos,...T,name:T.name,taken:CONFIG.taken.includes(no)});
+}));
+const avail=UNITS.filter(u=>!u.taken), left=avail.length;
+
+/* ---------- language ---------- */
+function setLang(l){
+  document.documentElement.dataset.lang=l;
+  document.documentElement.lang=l==="zh"?"zh-Hans":"en";
+  try{localStorage.setItem("kc-lang",l)}catch(e){}
+  $$("[data-setlang]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.setlang===l));
+  document.title = l==="zh" ? "Kundang 全新商业 — 只有 50 间的大路边店铺" : "Kundang New Commercial — Only 50 main-road shop offices";
+  buildSelects();
+}
+$$("[data-setlang]").forEach(b=>b.onclick=()=>setLang(b.dataset.setlang));
+
+/* ---------- static fills ---------- */
+$("#mapLink").href=CONFIG.mapUrl;
+$("#ftBrand").textContent=[CONFIG.brand,CONFIG.agentLine].filter(Boolean).join(" · ");
+$("#asAt").innerHTML=t(CONFIG.asAt.zh,CONFIG.asAt.en);
+if(CONFIG.rentProof&&CONFIG.rentProof.zh){$("#rentProof").innerHTML=t(CONFIG.rentProof.zh,CONFIG.rentProof.en)}else{$("#rentProof").remove()}
+["#leftN","#leftN2","#leftN2e","#leftN3","#leftN3e"].forEach(s=>{const e=$(s);if(e)e.textContent=left});
+
+/* ---------- unit board ---------- */
+$("#blocks").innerHTML=BLOCKS.map(b=>{
+  const us=UNITS.filter(u=>u.block===b.id), l=us.filter(u=>!u.taken).length;
+  return `<div class="blk"><div class="blk-h"><b>Block ${b.id}</b><span>${t(b.note.zh,b.note.en)} · <em>${t("剩 "+l+" 间",l+" left")}</em></span></div>
+  <div class="cells">${us.map(u=>`<button class="cell${u.corner?" cn":""}${u.taken?" sold":""}" data-no="${u.no}" ${u.taken?"disabled":""} aria-label="Unit ${u.no}">${u.no}</button>`).join("")}</div></div>`;
+}).join("");
+$("#blocks").addEventListener("click",e=>{const c=e.target.closest(".cell");if(c&&!c.disabled)pickUnit(+c.dataset.no)});
+
+function rebateText(u){
+  const [a,b]=u.rebate;
+  return b ? t(`${a}% + ${b}% 回扣`,`${a}% + ${b}% rebate`) : t(`${a}% 回扣`,`${a}% rebate`);
+}
+function pickUnit(no){
+  state.unit=no; const u=UNITS.find(x=>x.no===no);
+  $$(".cell").forEach(c=>c.classList.toggle("on",+c.dataset.no===no));
+  const net=u.price*(1-(u.rebate[0]+u.rebate[1])/100);
+  $("#detail").innerHTML=`
+    <div class="u">Block ${u.block} · ${t("单位","Unit")} ${u.no}</div>
+    <h3>${u.name}</h3><div class="ty">${t(u.pos.zh,u.pos.en)} · ${u.storey} ${t("层","storey")}</div>
+    <dl>
+      <dt>${t("地段尺寸","Lot size")}</dt><dd>${u.size} ft</dd>
+      <dt>${t("建筑面积","Built-up")}</dt><dd>${u.bu.toLocaleString()} sf</dd>
+      <dt>${t("配套","Package")}</dt><dd>${rebateText(u)}</dd>
+      <dt>${t("回扣后约","After rebate ≈")}</dt><dd>${rm(net)}</dd>
+      <dt>${t("订金","Booking")}</dt><dd>${rm(u.book)}</dd>
+    </dl>
+    <div class="pr">${rm(u.price)}</div>
+    <a class="btn btn-gold" href="#book">${t("帮我留意这一间","Hold my interest in this unit")}</a>`;
+  const sel=$("#fUnit"); if(sel) sel.value=String(no);
+}
+function emptyDetail(){
+  $("#detail").innerHTML=`<div class="u">${t("点一个单位","Tap a unit")}</div>
+  <h3>${t("哪一间是你的？","Which one is yours?")}</h3>
+  <p class="empty">${t("点左边任何一个还亮着的号码，看它的尺寸、价钱和配套。灰色的已经被选走了。","Tap any open number to see its size, price and package. Grey ones are already taken.")}</p>`;
+}
+emptyDetail();
+
+/* ---------- selects (calculator + form) ---------- */
+function typeOptions(){
+  const seen={},out=[];
+  avail.forEach(u=>{const k=u.ty+"|"+u.price+"|"+u.block;if(!seen[k]){seen[k]=1;out.push(u)}});
+  return out.sort((a,b)=>a.price-b.price);
+}
+function buildSelects(){
+  const L=lang(), c=$("#cType"), keep=c.value;
+  c.innerHTML=typeOptions().map(u=>`<option value="${u.no}">${u.name} · Block ${u.block} · ${u.pos[L]} · ${rm(u.price)}</option>`).join("");
+  if(keep&&[...c.options].some(o=>o.value===keep))c.value=keep;
+  const f=$("#fUnit"), keepF=f.value;
+  f.innerHTML=`<option value="">${L==="zh"?"还不确定，帮我推荐":"Not sure — recommend one"}</option>`+
+    avail.map(u=>`<option value="${u.no}">#${u.no} · Block ${u.block} · ${u.name} · ${rm(u.price)}</option>`).join("");
+  f.value=keepF||(state.unit?String(state.unit):"");
+  calc();
+}
+function calc(){
+  const u=UNITS.find(x=>x.no===+$("#cType").value); if(!u)return;
+  const rent=+$("#cRent").value, pct=u.rebate[0]+u.rebate[1], reb=u.price*pct/100, net=u.price-reb;
+  $("#cRentV").textContent=rm(rent);
+  $("#oPrice").textContent=rm(u.price);
+  $("#oRebL").innerHTML=t(`回扣 ${u.rebate[1]?u.rebate[0]+"% + "+u.rebate[1]+"%":u.rebate[0]+"%"}`,`Rebate ${u.rebate[1]?u.rebate[0]+"% + "+u.rebate[1]+"%":u.rebate[0]+"%"}`);
+  $("#oReb").textContent="− "+rm(reb);
+  $("#oNet").textContent=rm(net);
+  $("#oBook").textContent=rm(u.book);
+  $("#oYield").textContent=(rent*12/net*100).toFixed(1)+"%";
+}
+$("#cType").onchange=calc; $("#cRent").oninput=calc;
+
+/* ---------- goal (micro-commitment) ---------- */
+function setGoal(g,scroll){
+  state.goal=g;
+  $$("[data-goal]").forEach(b=>{if(b.tagName==="BUTTON")b.setAttribute("aria-pressed",b.dataset.goal===g)});
+  $$("[data-goal-text]").forEach(e=>e.hidden=e.dataset.goalText!==g);
+  if(scroll)$("#gap").scrollIntoView({behavior:"smooth"});
+}
+$("#pick").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setGoal(b.dataset.goal,true)});
+$("#fGoal").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setGoal(b.dataset.goal,false)});
+$("#fWhen").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state.when=b.dataset.v;$$("#fWhen button").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+
+/* ---------- WhatsApp ---------- */
+const GOAL={own:{zh:"自己开店",en:"my own business"},invest:{zh:"收租投资",en:"rental investment"},both:{zh:"自用 + 收租",en:"own use + rental"}};
+const WHEN={wd:{zh:"平日",en:"a weekday"},sat:{zh:"星期六",en:"Saturday"},sun:{zh:"星期日",en:"Sunday"},call:{zh:"先电话聊",en:"a call first"}};
+function waLink(extra){
+  const L=lang(), name=$("#fName").value.trim(), no=$("#fUnit").value, u=no&&UNITS.find(x=>x.no===+no);
+  const lines = L==="zh" ? [
+    "你好，我想预约 Kundang 全新商业店铺看地。",
+    name&&("姓名："+name),
+    state.goal&&("目的："+GOAL[state.goal].zh),
+    u?("有兴趣的单位：#"+u.no+"（Block "+u.block+" · "+u.name+" · "+rm(u.price)+"）"):"单位：还不确定，请帮我推荐",
+    "方便的时间："+WHEN[state.when].zh,
+    extra
+  ] : [
+    "Hi, I'd like to book a viewing for the new Kundang commercial shop offices.",
+    name&&("Name: "+name),
+    state.goal&&("Goal: "+GOAL[state.goal].en),
+    u?("Unit of interest: #"+u.no+" (Block "+u.block+" · "+u.name+" · "+rm(u.price)+")"):"Unit: not sure yet, please recommend",
+    "Preferred time: "+WHEN[state.when].en,
+    extra
+  ];
+  return "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(lines.filter(Boolean).join("\n"));
+}
+$("#form").addEventListener("submit",e=>{
+  e.preventDefault();
+  const n=$("#fName"); if(!n.value.trim()){n.focus();n.style.borderColor="var(--sold)";return}
+  window.open(waLink(),"_blank","noopener");
+});
+$$("[data-wa='calc']").forEach(a=>a.addEventListener("click",()=>{const v=$("#cType").value;$("#fUnit").value=v;state.unit=+v}));
+
+/* ---------- scroll: nav, progress, sticky bar, reveals, counters ---------- */
+const nav=$("#nav"),prog=$("#prog"),bar=$("#bar"),book=$("#book");
+function onScroll(){
+  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  nav.classList.toggle("solid",y>40);
+  prog.style.width=(h>0?y/h*100:0)+"%";
+  const b=book.getBoundingClientRect();
+  bar.classList.toggle("show",y>innerHeight*.7&&b.top>innerHeight*.6);
+}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+function countUp(el){
+  const end=+el.dataset.count,dec=+(el.dataset.dec||0),pre=el.dataset.prefix||"",suf=el.dataset.suffix||"",t0=performance.now(),d=1400;
+  (function f(now){const p=Math.min(1,(now-t0)/d),e=1-Math.pow(1-p,3);el.textContent=pre+(end*e).toFixed(dec)+suf;if(p<1)requestAnimationFrame(f)})(t0);
+}
+if("IntersectionObserver" in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    e.target.classList.add("in");
+    $$("[data-count]",e.target).forEach(countUp);
+    if(e.target.querySelector("#meter")||e.target.classList.contains("meter"))$("#meter").style.width=(50-left)/50*100+"%";
+    io.unobserve(e.target);
+  }),{threshold:.14,rootMargin:"0px 0px -6% 0px"});
+  $$(".rv").forEach(e=>io.observe(e));
+}else{$$(".rv").forEach(e=>e.classList.add("in"));$("#meter").style.width=(50-left)/50*100+"%"}
+
+setLang(lang());
+</script>
+</body>
+</html>
